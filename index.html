@@ -5,90 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahantesh & Sahana - Wedding Invitation</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            background-color: #f4efeb; /* Warm earthy beige */
-            font-family: 'Poppins', sans-serif;
-            color: #4a4a4a;
+            /* Soft cream pastel background with a subtle paper texture */
+            background-color: #fcf9f2; 
+            background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+            font-family: 'Playfair Display', serif;
+            color: #5c4a44;
+            overflow-x: hidden;
         }
 
         .container {
             max-width: 500px;
             margin: 0 auto;
-            background-color: #fffcf9;
+            background-color: transparent;
             min-height: 100vh;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            padding-bottom: 50px;
-            border-left: 8px solid #234031;
-            border-right: 8px solid #234031;
+            position: relative;
         }
 
-        /* Hero Section - Curved and Regal */
-        .hero {
+        /* WATERCOLOR FLORALS & LEAVES */
+        .floral-top {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            opacity: 0.6;
+            mix-blend-mode: multiply; /* This makes the background vanish like real paint! */
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .banana-leaves {
+            position: absolute;
+            bottom: -50px;
+            right: -30px;
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            opacity: 0.5;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* The Arched Mandap Frame */
+        .arch-frame {
+            margin: 30px 20px;
+            border: 1.5px solid #d4c1b3;
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            padding: 50px 20px 40px;
             text-align: center;
-            padding: 50px 20px 60px;
-            background: linear-gradient(135deg, #182e23, #234031); /* Regal Emerald */
-            color: #ebd599; /* Antique Gold */
-            border-bottom: 6px solid #ebd599;
-            border-bottom-left-radius: 50%;
-            border-bottom-right-radius: 50%;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .om-symbol {
-            font-size: 32px;
-            margin-bottom: 10px;
-            color: #ebd599;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(254,250,245,0.95));
+            box-shadow: inset 0 0 20px rgba(212, 193, 179, 0.2), 0 10px 30px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 2;
         }
 
-        .hero h3 { font-family: 'Cinzel', serif; font-size: 14px; letter-spacing: 3px; margin-bottom: 15px; text-transform: uppercase; }
-        .hero h1 { font-family: 'Great Vibes', cursive; font-size: 60px; margin-bottom: 5px; font-weight: 400; line-height: 1.1; color: #ffffff;}
-        .hero p { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px; margin-top: 15px; font-weight: bold;}
-
-        /* Section Titles */
-        .title {
-            text-align: center;
-            font-family: 'Cinzel', serif;
-            color: #234031;
-            font-size: 26px;
-            margin: 40px 0 20px;
-            font-weight: bold;
+        .ganesha {
+            width: 45px;
+            margin-bottom: 20px;
+            opacity: 0.75;
         }
 
-        /* Timeline Cards - Centered & Traditional */
-        .timeline-card {
-            background: #ffffff;
-            border: 1px solid #ebd599;
-            border-top: 5px solid #234031;
-            padding: 20px;
-            margin: 15px 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            text-align: center;
+        .intro {
+            font-size: 14px;
+            color: #8c766e;
+            margin-bottom: 25px;
+            font-style: italic;
         }
-        .timeline-card h2 { font-family: 'Cinzel', serif; color: #234031; font-size: 18px; margin-bottom: 8px; font-weight: 700; }
-        .timeline-card p { font-size: 14px; color: #555; line-height: 1.6; }
 
-        /* Venue */
-        .venue-box {
-            text-align: center; padding: 0 20px;
+        /* Deep Maroon Cursive Names */
+        .names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 58px;
+            color: #8b2b2f; 
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(139, 43, 47, 0.1);
         }
-        .venue-box h3 { color: #234031; font-size: 18px; margin-bottom: 5px; }
-        .venue-box p { color: #666; font-size: 14px; }
 
-        /* Jumbo Contact Box */
-        .contact-section {
-            text-align: center; padding: 30px 15px; background-color: #fbf9f6; 
-            border-radius: 20px; margin: 40px 20px; border: 2px dashed #ebd599;
+        .and {
+            font-size: 28px;
+            color: #b08d6a; 
+            display: block;
+            margin: 5px 0;
         }
-        .btn-green {
-            text-decoration: none; color: white; background-color: #234031; 
-            padding: 16px; border-radius: 12px; display: block; font-weight: bold; margin: 10px auto; max-width: 300px;
-            font-family: 'Cinzel', serif; letter-spacing: 1px;
+
+        /* The elegant Date format */
+        .date-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            font-size: 15px;
+            color: #5c4a44;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .line {
+            width: 40px;
+            height: 1px;
+            background-color: #d4c1b3;
+        }
+
+        .main-date {
+            font-size: 28px;
+            color: #8b2b2f;
+            font-weight: 600;
+        }
+
+        /* CARTOON COUPLE IMAGE */
+        .cartoon-couple {
+            width: 180px;
+            margin: 30px auto 20px;
+            display: block;
+            filter: drop-shadow(0px 8px 12px rgba(0,0,0,0.1));
+        }
+
+        /* Venue Details */
+        .venue {
+            font-size: 14px;
+            margin-top: 20px;
+            color: #5c4a44;
+            line-height: 1.8;
+            padding: 15px;
+            border-top: 1px dashed #d4c1b3;
+            border-bottom: 1px dashed #d4c1b3;
+        }
+
+        /* Soft Pastel Buttons */
+        .btn-pastel {
+            text-decoration: none; color: #fff; background-color: #8b2b2f; 
+            padding: 14px; border-radius: 30px; display: block; font-size: 14px;
+            margin: 12px auto; max-width: 250px; letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(139, 43, 47, 0.2);
         }
     </style>
 </head>
@@ -96,39 +156,44 @@
 
     <div class="container">
         
-        <div class="hero">
-            <div class="om-symbol">ॐ</div>
-            <h3>We Are Getting Married</h3>
-            <h1>Mahantesh<br><span style="font-size: 35px; color: #ebd599;">&</span><br>Sahana</h1>
-            <p>10 • MAY • 2026</p>
+        <img src="https://images.unsplash.com/photo-1578306915234-8c8182f059a6?q=80&w=600&auto=format&fit=crop" class="floral-top" alt="floral">
+        <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=600&auto=format&fit=crop" class="banana-leaves" alt="leaves">
+
+        <div class="arch-frame">
+            
+            <img src="https://cdn-icons-png.flaticon.com/512/8200/8200380.png" class="ganesha" alt="Ganesha">
+            
+            <p class="intro">Together with our families, we cordially invite you to the wedding of</p>
+            
+            <div class="names">
+                Mahantesh
+                <span class="and">and</span>
+                Sahana
+            </div>
+            
+            <div class="date-divider">
+                <span>May</span>
+                <div class="line"></div>
+                <span class="main-date">10<sup style="font-size: 14px;">TH</sup></span>
+                <div class="line"></div>
+                <span>2026</span>
+            </div>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/4145/4145322.png" class="cartoon-couple" alt="Cartoon Couple">
+
+            <div class="venue">
+                <strong>Sri Amma Maheshwari Garden Hall</strong><br>
+                Navali Road, Behind Canara Bank<br>
+                Karatagi
+            </div>
+
+            <div style="margin-top: 35px;">
+                <p style="font-size: 12px; color: #8c766e; margin-bottom: 15px; font-style: italic;">RSVP to Vakkaligera Family</p>
+                <a href="tel:+91953853585" class="btn-pastel">📞 Call to RSVP</a>
+                <a href="https://wa.me/91740491542" style="background-color: #638861;" class="btn-pastel">💬 WhatsApp Us</a>
+            </div>
+
         </div>
-
-        <h2 class="title">Wedding Festivities</h2>
-
-        <div class="timeline-card">
-            <h2>Pre-Wedding (Devatakarya)</h2>
-            <p><strong>Saturday, 9th May 2026</strong></p>
-            <p>Join us for the beginning of our celebrations.</p>
-        </div>
-
-        <div class="timeline-card">
-            <h2>Muhurtam (Wedding Ceremony)</h2>
-            <p><strong>Sunday, 10th May 2026</strong></p>
-            <p>06:35 AM to 07:35 AM (Vrushabha Lagna)<br>08:15 AM to 09:11 AM (Mithuna Lagna)</p>
-        </div>
-
-        <h2 class="title">The Venue</h2>
-        <div class="venue-box">
-            <h3>Sri Amma Maheshwari Garden Hall</h3>
-            <p>Navali Road, Behind Canara Bank, Karatagi</p>
-        </div>
-
-        <div class="contact-section">
-            <h2 style="font-family: 'Cinzel', serif; color: #234031; margin-bottom: 15px; font-size: 20px;">Contact for Assistance</h2>
-            <a href="tel:+91953853585" class="btn-green">📞 Call Vakkaligera Family</a>
-            <a href="https://wa.me/91740491542" style="background-color: #25D366; font-family: 'Poppins', sans-serif;" class="btn-green">💬 WhatsApp Raghavendra</a>
-        </div>
-
     </div>
 
 </body>
