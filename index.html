@@ -5,68 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahantesh & Sahana - Wedding Invitation</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        /* The "Understated Luxury" Color Palette */
         body {
-            background-color: #eef1f4; /* Soft Pearl Grey */
+            background-color: #f4efeb; /* Warm earthy beige */
             font-family: 'Poppins', sans-serif;
-            color: #333;
+            color: #4a4a4a;
         }
 
         .container {
             max-width: 500px;
             margin: 0 auto;
-            background-color: #ffffff; /* Crisp White */
+            background-color: #fffcf9;
             min-height: 100vh;
-            box-shadow: 0 0 25px rgba(43, 76, 126, 0.1);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
             padding-bottom: 50px;
+            border-left: 8px solid #234031;
+            border-right: 8px solid #234031;
         }
 
-        /* Hero Section */
+        /* Hero Section - Curved and Regal */
         .hero {
             text-align: center;
-            padding: 60px 20px 40px;
-            background-color: #2b4c7e; /* Aurora Blue */
-            color: white;
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
+            padding: 50px 20px 60px;
+            background: linear-gradient(135deg, #182e23, #234031); /* Regal Emerald */
+            color: #ebd599; /* Antique Gold */
+            border-bottom: 6px solid #ebd599;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-        .hero h3 { font-size: 16px; font-weight: 300; letter-spacing: 2px; margin-bottom: 15px; }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: 42px; margin-bottom: 10px; }
-        .hero p { font-size: 14px; opacity: 0.9; margin-top: 10px; }
+        
+        .om-symbol {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #ebd599;
+        }
+
+        .hero h3 { font-family: 'Cinzel', serif; font-size: 14px; letter-spacing: 3px; margin-bottom: 15px; text-transform: uppercase; }
+        .hero h1 { font-family: 'Great Vibes', cursive; font-size: 60px; margin-bottom: 5px; font-weight: 400; line-height: 1.1; color: #ffffff;}
+        .hero p { font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 2px; margin-top: 15px; font-weight: bold;}
 
         /* Section Titles */
         .title {
             text-align: center;
-            font-family: 'Playfair Display', serif;
-            color: #2b4c7e;
-            font-size: 28px;
+            font-family: 'Cinzel', serif;
+            color: #234031;
+            font-size: 26px;
             margin: 40px 0 20px;
+            font-weight: bold;
         }
 
-        /* Timeline Cards */
+        /* Timeline Cards - Centered & Traditional */
         .timeline-card {
-            background: #f8f9fa;
-            border-left: 4px solid #2b4c7e;
+            background: #ffffff;
+            border: 1px solid #ebd599;
+            border-top: 5px solid #234031;
             padding: 20px;
             margin: 15px 20px;
-            border-radius: 0 10px 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
         }
-        .timeline-card h2 { color: #2b4c7e; font-size: 20px; margin-bottom: 5px; }
-        .timeline-card p { font-size: 14px; color: #555; }
+        .timeline-card h2 { font-family: 'Cinzel', serif; color: #234031; font-size: 18px; margin-bottom: 8px; font-weight: 700; }
+        .timeline-card p { font-size: 14px; color: #555; line-height: 1.6; }
+
+        /* Venue */
+        .venue-box {
+            text-align: center; padding: 0 20px;
+        }
+        .venue-box h3 { color: #234031; font-size: 18px; margin-bottom: 5px; }
+        .venue-box p { color: #666; font-size: 14px; }
 
         /* Jumbo Contact Box */
         .contact-section {
-            text-align: center; padding: 40px 15px; background-color: #f8f9fa; 
-            border-radius: 20px; margin: 40px 20px; border: 1px solid #dcdde1;
+            text-align: center; padding: 30px 15px; background-color: #fbf9f6; 
+            border-radius: 20px; margin: 40px 20px; border: 2px dashed #ebd599;
         }
-        .btn-blue {
-            text-decoration: none; color: white; background-color: #2b4c7e; 
+        .btn-green {
+            text-decoration: none; color: white; background-color: #234031; 
             padding: 16px; border-radius: 12px; display: block; font-weight: bold; margin: 10px auto; max-width: 300px;
+            font-family: 'Cinzel', serif; letter-spacing: 1px;
         }
     </style>
 </head>
@@ -75,8 +97,9 @@
     <div class="container">
         
         <div class="hero">
-            <h3>WE ARE GETTING MARRIED</h3>
-            <h1>Mahantesh<br>&<br>Sahana</h1>
+            <div class="om-symbol">ॐ</div>
+            <h3>We Are Getting Married</h3>
+            <h1>Mahantesh<br><span style="font-size: 35px; color: #ebd599;">&</span><br>Sahana</h1>
             <p>10 • MAY • 2026</p>
         </div>
 
@@ -95,19 +118,18 @@
         </div>
 
         <h2 class="title">The Venue</h2>
-        <div style="text-align: center; padding: 0 20px;">
-            <h3 style="color: #2b4c7e;">Sri Amma Maheshwari Garden Hall</h3>
-            <p style="color: #666; font-size: 14px; margin-top: 5px;">Navali Road, Behind Canara Bank, Karatagi</p>
+        <div class="venue-box">
+            <h3>Sri Amma Maheshwari Garden Hall</h3>
+            <p>Navali Road, Behind Canara Bank, Karatagi</p>
         </div>
 
         <div class="contact-section">
-            <h2 style="font-family: 'Playfair Display', serif; color: #2b4c7e; margin-bottom: 15px;">Contact for Assistance</h2>
-            <a href="tel:+91953853585" class="btn-blue">📞 Call Vakkaligera Family</a>
-            <a href="https://wa.me/91740491542" style="background-color: #25D366;" class="btn-blue">💬 WhatsApp Raghavendra</a>
+            <h2 style="font-family: 'Cinzel', serif; color: #234031; margin-bottom: 15px; font-size: 20px;">Contact for Assistance</h2>
+            <a href="tel:+91953853585" class="btn-green">📞 Call Vakkaligera Family</a>
+            <a href="https://wa.me/91740491542" style="background-color: #25D366; font-family: 'Poppins', sans-serif;" class="btn-green">💬 WhatsApp Raghavendra</a>
         </div>
 
     </div>
 
 </body>
 </html>
-
