@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-<title>Mahantesh & Sahana Wedding Invitation</title>
-<meta property="og:title" content="Mahantesh & Sahana Wedding Invitation">
+<title>Vakkaligera Double Wedding Invitation</title>
+<meta property="og:title" content="Vakkaligera Double Wedding Invitation">
 	
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<style>		
 		* { margin: 0; padding: 0; box-sizing: border-box; }
         
-        /* THE ULTIMATE GAP CRUSHER - UPDATED */
         section:not(.countdown-section), .fade-in:not(.countdown-section) {
             min-height: auto !important;
             height: auto !important;
@@ -23,7 +22,6 @@
 
         .countdown-section { padding-top: 250px !important; }
 
-        /* FORCE TIMELINE TO BE BRIGHT AND BOLD */
         .timeline-item, .timeline-item.minor { opacity: 1 !important; }
         .timeline-item h2, .timeline-item.minor h2 { color: #705423 !important; font-weight: 900 !important; font-size: 24px !important; }
         .timeline-item p { color: #333 !important; font-weight: bold !important; font-size: 15px !important; }
@@ -53,22 +51,19 @@
 		section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #5a3e1b; border: #3d0000; }
 		h1 { font-family: 'Playfair Display', serif; margin-bottom: 20px; }
 		
-        .royal-invite { text-align: center; font-family: 'Playfair Display', serif; color: #5a3e1b; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 20px; box-sizing: border-box; }
-		.title { font-size: 64px; }
-		.subtitle { font-size: 32px; margin-bottom: 32px; }
-		.couple { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; width: 100%; max-width: 900px; margin: 0 auto; }
-		.person { text-align: center; }
-		.names { font-size: 48px; font-weight: bold; margin-bottom: 12px; }
-		.parents { font-size: 28px; }
-		.and-ring { position: relative; border-radius: 50%; width: clamp(70px, 8vw, 120px); aspect-ratio: 1 / 1; border-radius: 50%; border: 2px solid #d4af37; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 10px rgba(212, 175, 55, 0.6), inset 0 0 5px rgba(255, 255, 255, 0.5); }
-		.and-text { font-size: 40px; z-index: 2; }
-		.and-ring::before { content: ""; position: absolute; top: -18px; width: 18px; height: 18px; background: radial-gradient(circle at 30% 30%, #ffffff, #cfd8dc); transform: rotate(45deg); box-shadow: 0 0 8px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.6); }
-		.and-ring::after { content: ""; position: absolute; top: -22px; left: 50%; width: 4px; height: 4px; background: white; border-radius: 50%; box-shadow: 0 0 6px white, 0 0 12px white; transform: translateX(-50%); animation: sparkle 2s infinite ease-in-out; }
+        .royal-invite { text-align: center; font-family: 'Playfair Display', serif; color: #5a3e1b; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 15px; box-sizing: border-box; }
+		.title { font-size: 55px; line-height: 1.1; margin-bottom: 10px;}
+		.subtitle { font-size: 26px; margin-bottom: 30px; }
+		
+        /* NEW DOUBLE WEDDING COUPLE CARDS */
+        .double-couple-container { display: flex; flex-direction: column; gap: 30px; width: 100%; max-width: 500px; margin: 0 auto; }
+        .couple-card { background: rgba(255, 255, 255, 0.65); border: 2px solid #d4af37; border-radius: 20px; padding: 25px 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); position: relative; }
+        .couple-card::before { content: "♥"; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #f7e4c3; color: #d4af37; font-size: 24px; padding: 0 10px; }
+        .names { font-size: 40px; font-weight: bold; margin-bottom: 15px; color: #5a0000; line-height: 1.1; }
+        .names span { font-size: 24px; color: #d4af37; margin: 0 10px; }
+        .parents { font-size: 18px; font-family: 'Poppins', sans-serif; color: #333; line-height: 1.6; }
 
-		@keyframes sparkle { 0%, 100% { opacity: 0.3; transform: translateX(-50%) scale(1); } 50% { opacity: 1; transform: translateX(-50%) scale(1.5); } }
-
-		.invite-line { font-size: 32px; margin-bottom: 15px; }
-		.footnote { margin-top: 200px; font-size: 32px; max-width: 750px; opacity: 0; }
+		.footnote { margin-top: 60px; font-size: 24px; max-width: 750px; opacity: 0; padding: 0 20px;}
 
 		/* FADE IN LOGIC */
 		.fade-in { opacity: 0; transform: translateY(40px); transition: opacity 0.5s ease, transform 0.5s ease; }
@@ -88,12 +83,12 @@
 
 		.couple-art { position: absolute; bottom: 500px; width: 500px; left: 50%; transform: translateX(-50%) translateY(20px); opacity: 0; pointer-events: none; filter: sepia(3) saturate(2) hue-rotate(0deg) brightness(1); transition: opacity 3s ease, transform 3s ease; }
 		.couple-art.show { opacity: 0.85; }
-		.countdown-text { font-size: 40px; margin-top: 80px; width: 750px; opacity: 0; transform: translateY(10px); transition: opacity 1s ease, transform 1s ease; }
+		.countdown-text { font-size: 32px; margin-top: 80px; width: 100%; max-width: 500px; opacity: 0; transform: translateY(10px); transition: opacity 1s ease, transform 1s ease; padding: 0 15px;}
 		.countdown-text.show { opacity: 1; transform: translateY(0); }
 		.countdown-section { justify-content: flex-start; padding-top: 120px; position: relative; }
 		.countdown-section h1 { margin-bottom: 10px; }
 		.countdown-section .count { margin-top: 20px; }
-		.shaloka { position: absolute; bottom: 200px; text-align: center; font-size: 30px; opacity: 0; transition: opacity 3s ease, transform 3s ease; }
+		.shaloka { position: absolute; bottom: 200px; text-align: center; font-size: 24px; opacity: 0; transition: opacity 3s ease, transform 3s ease; padding: 0 15px;}
 		.shaloka.show { opacity: 0.85; }
 
 		.timeline { position: relative; margin-top: 20px; padding-left: 20px; }
@@ -106,29 +101,29 @@
 		@keyframes heartbeat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
 
 		.timeline-content { margin-left: 44px; text-align: left; max-width: 400px; }
-		.timeline-content h2 { font-size: 40px; margin-bottom: 5px; margin-left: 20px; }
-		.timeline-venue { font-size: 28px; margin-left: 20px; }
-		.timeline-time { font-size: 28px; opacity: 0.8; margin-left: 20px; }
+		.timeline-content h2 { font-size: 32px; margin-bottom: 5px; margin-left: 20px; }
+		.timeline-venue { font-size: 22px; margin-left: 20px; }
+		.timeline-time { font-size: 20px; opacity: 0.8; margin-left: 20px; }
 		.timeline-item.minor .timeline-content { transform: scale(0.9); opacity: 0.8; }
-		.timeline-item.minor h2 { font-size: 32px; }
-		.timeline-item.minor .venue, .timeline-item.minor .meta { font-size: 24px; }
-		.timeline-item.minor .timeline-dot { font-size: 32px; }
+		.timeline-item.minor h2 { font-size: 28px; }
+		.timeline-item.minor .venue, .timeline-item.minor .meta { font-size: 20px; }
+		.timeline-item.minor .timeline-dot { font-size: 28px; }
 		.timeline-item.minor { margin-bottom: 24px; filter: opacity(0.9); }
 
-		iframe { width: 750px; height: 400px; padding: 5px; border-radius: 15px; border: 2px solid #b8860b; box-shadow: 0 6px 15px rgba(0,0,0,0.3); }
+		iframe { width: 100%; max-width: 500px; height: 300px; padding: 5px; border-radius: 15px; border: 2px solid #b8860b; box-shadow: 0 6px 15px rgba(0,0,0,0.3); }
 		.venue-art { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 300px; opacity: 0.85; pointer-events: none; filter: sepia(1) saturate(3) hue-rotate(-10deg) brightness(0); }
 		.venue-name { font-size: 40px; margin-top: 20px; }
-		.venue-address { font-size: 32px; opacity: 0.8; margin-bottom: 10px; }
+		.venue-address { font-size: 24px; opacity: 0.8; margin-bottom: 10px; padding: 0 15px;}
 
 		.ending-line { text-align: center; margin-top: 40px; margin-bottom: 20px; font-family: 'Playfair Display', serif; color: #5a3e1b; opacity: 0; transform: translateY(20px); animation: fadeEnding 1.5s ease forwards; animation-delay: 1s; }
-		.ending-line p { font-size: 44px; letter-spacing: 1px; line-height: 1.8; }
-		.ending-line span { display: block; font-size: 36px; opacity: 0.8; font-style: italic; }
+		.ending-line p { font-size: 36px; letter-spacing: 1px; line-height: 1.8; }
+		.ending-line span { display: block; font-size: 28px; opacity: 0.8; font-style: italic; }
 		@keyframes fadeEnding { to { opacity: 1; transform: translateY(0); } }
 
 		.om-symbol { margin-top: 40px; font-size: 44px; color: #b8860b; opacity: 0.7; text-align: center; }
 
 		.nextBtnWrapper { position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 10; }
-		.nextBtn { width: 100px; height: 100px; border-radius: 50%; border: none; background: #b8860b; color: white; font-size: 36px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 9999; animation: floatY 2s ease-in-out infinite; transition: opacity 0.3s ease, transform 0.2s ease, background 0.3s ease; }
+		.nextBtn { width: 80px; height: 80px; border-radius: 50%; border: none; background: #b8860b; color: white; font-size: 30px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 9999; animation: floatY 2s ease-in-out infinite; transition: opacity 0.3s ease, transform 0.2s ease, background 0.3s ease; }
 		@keyframes floatY { 0%, 100% { transform: translateY(0); box-shadow: 0 4px 12px rgba(0,0,0,0.3); } 50% { transform: translateY(-8px); box-shadow: 0 8px 18px rgba(212,175,55,0.6); } }
 		.nextBtn:hover { transform: scale(1.1) translateY(-8px); background: #b8962e; }
 		
@@ -142,62 +137,67 @@
 	</div>
 
 	<section class="fade-in">
-		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F011%2F048%2F407%2Fsmall_2x%2Fhindu-god-ganesha-line-art-free-png.png&f=1&nofb=1&ipt=629b6f07d7805f37d81d6d792b37398ef30b82585854e70a48abe2397d623e4c" class="ganesh" alt="Ganesh">
+		<img src="https://cdn-icons-png.flaticon.com/512/8200/8200380.png" class="ganesh" alt="Ganesh" style="width: 150px; opacity: 0.8;">
 		<div class="ganesh-text">|| श्री गणेशाय नमः ||</div>
 	</section>
 
 	<section class="royal-invite fade-in">
-		<h3 class="subtitle">With the blessings of their families</h3>
-		<h1 class="title">You Are Cordially Invited</h1>
-		<h4 class="subtitle">to the Wedding Ceremony of</h4>
+		<h3 class="subtitle" style="font-family: 'Poppins', sans-serif; font-size: 16px; text-transform: uppercase; letter-spacing: 2px;">With the blessings of our families</h3>
+		<h1 class="title">A Double Celebration</h1>
+		<h4 class="subtitle" style="font-size: 22px;">Join us for the Wedding Ceremonies of</h4>
 		
-		<div class="couple">
-			<div class="person">
-				<h1 class="names">Mahantesh</h1>
-				<p class="parents">S/O <br/> Late Shri Basappa Vakkaligera<br/> Smt. Rudramma</p>
+		<div class="double-couple-container">
+            
+            <div class="couple-card">
+				<h1 class="names">Mahantesh <span>&</span> Sahana</h1>
+				<p class="parents"><strong>Groom:</strong> S/O Late Sri Basappa Vakkaligera & Smt. Rudramma</p>
+                <div style="height: 1px; background: #d4af37; margin: 10px 40px; opacity: 0.5;"></div>
+                <p class="parents"><strong>Bride:</strong> D/O Sri Goudappa Gouda Malipatil & Smt. Bhagyamma</p>
 			</div>
-			<div class="and-ring">
-				<span class="and-text">&</span>
+
+            <div class="couple-card">
+				<h1 class="names">Chethankumar <span>&</span> Neha</h1>
+				<p class="parents"><strong>Groom:</strong> S/O Late Sri Basappa Vakkaligera & Smt. Rudramma</p>
+                <div style="height: 1px; background: #d4af37; margin: 10px 40px; opacity: 0.5;"></div>
+                <p class="parents"><strong>Bride:</strong> D/O Sri Channabasappa Lakshmi & Smt. Basamma</p>
 			</div>
-			<div class="person">
-				<h1 class="names">Sahana</h1>
-				<p class="parents">D/O <br/> Shri Goudappa Gouda Malipatil <br/> Smt. Bhagyamma</p>
-			</div>
+
 		</div>
+
 		<div class="footnote">
-			We would be delighted to have you with us
-			as we celebrate our special day
-			and begin this beautiful journey together
+			We would be delighted to have you with us as we celebrate our special day and begin this beautiful journey together.
 		</div>
 	</section>
 
-    <section class="fade-in" style="text-align: center; padding: 10px 15px; margin-bottom: 40px; background-color: transparent;">
-        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600&auto=format&fit=crop" alt="Collage Placeholder" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
-    </section>
-    
+    <section class="fade-in" style="padding: 10px 15px; margin-bottom: 50px; display: flex; flex-direction: column; gap: 30px; width: 100%; max-width: 500px; margin: 0 auto;">
+        
+        <div style="text-align: center;">
+            <h3 style="font-family: 'Playfair Display', serif; color: #5a0000; margin-bottom: 10px; font-size: 24px;">Mahantesh & Sahana</h3>
+            <img src="https://images.unsplash.com/photo-1583939000140-6a56e54e4c29?q=80&w=600&auto=format&fit=crop" alt="Couple 1 Placeholder" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 3px solid #d4af37;">
+        </div>
+
+        <div style="text-align: center;">
+            <h3 style="font-family: 'Playfair Display', serif; color: #5a0000; margin-bottom: 10px; font-size: 24px;">Chethankumar & Neha</h3>
+            <img src="https://images.unsplash.com/photo-1621886121430-80d0d8293774?q=80&w=600&auto=format&fit=crop" alt="Couple 2 Placeholder" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 3px solid #d4af37;">
+        </div>
+        
+	</section>
+	
 	<section class="fade-in">
 		<h1 class="title">Reveal</h1>
-		<h4 class="subtitle">Scratch to discover the date</h4>
+		<h4 class="subtitle" style="font-size: 20px;">Scratch to discover the date</h4>
 		<div class="coin-wrap">
 			<div class="coin"><span>10</span><canvas class="scratch"></canvas></div>
 			<div class="coin"><span>May</span><canvas class="scratch"></canvas></div>
 			<div class="coin"><span>2026</span><canvas class="scratch"></canvas></div>
 		</div>
 	</section>
-
-    <section class="fade-in" style="padding: 10px 15px; margin-bottom: 50px; display: flex; flex-direction: column; gap: 20px;">
-        <div style="width: 75%; align-self: flex-start;">
-            <img src="https://images.unsplash.com/photo-1596450514735-11005b822166?q=80&w=600&auto=format&fit=crop" alt="Bride Placeholder" style="width: 100%; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
-        </div>
-        <div style="width: 75%; align-self: flex-end;">
-            <img src="https://images.unsplash.com/photo-1613061527119-56ad37b8a581?q=80&w=600&auto=format&fit=crop" alt="Groom Placeholder" style="width: 100%; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
-        </div>
-	</section>
 	
 	<section class="fade-in">
 		<h1 class="title">Wedding Festivities</h1>
-		<div class="timeline">
-			<div class="timeline-item ">
+		<div class="timeline" style="max-width: 500px; margin: 0 auto;">
+			
+            <div class="timeline-item ">
                 <div class="timeline-dot"><svg viewBox="0 0 24 24" width="32" height="40"><path fill="#d4af37" d="M12 21s-6.7-4.35-10-8.5C.63 10.15.5 7.73 2 6c1.23-1.42 3.24-1.73 4.96-.71C8.2 5.92 9.8 6.5 12 8.5c2.2-2 3.8-2.58 5.04-3.21C18.76 4.27 20.77 4.58 22 6c1.5 1.73 1.37 4.15-.04 6.5C18.7 16.65 12 21 12 21z"/></svg></div>
                 <div class="timeline-content">
                     <h2 style="color: #705423; font-weight: 900; font-size: 24px;">Devatakarya (Pre-Wedding)</h2>
@@ -229,18 +229,17 @@
 			<div class="box"><span id="s"></span>Seconds</div>
 		</div>
 		<div class="countdown-text">until the big day</div>
-		<div class="countdown-text">Your esteemed presence shall be our greatest honour and a cherished blessing.</div>
+		<div class="countdown-text" style="font-size: 20px;">Your esteemed presence shall be our greatest honour and a cherished blessing.</div>
 
-		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fosoq.com%2Fclipart-images%2Findian-wedding-clipart%2Findian-wedding-couple-maang-bharai-ceremony-transparent-background-png.png&f=1&nofb=1&ipt=a14d9aa8d210f3f9afec576fc486db8a1f27f882e30fc65c0543bc544dc06185" class="couple-art" alt="Couple Art">
+		<img src="https://cdn-icons-png.flaticon.com/512/4145/4145322.png" class="couple-art" alt="Couple Art" style="width: 250px; filter: none;">
 	    <div class="shaloka">।। विघ्नेश्वराय वरदाय सुरप्रियाय लम्बोदराय सकलाय जगद्धिताय ।। <br/>।। नागाननाय श्रुतियज्ञविभूषिताय गौरीसुताय गणनाथ नमो नमस्ते ।।</div>
 	</section>
 
-	<section class="fade-in">
+	<section class="fade-in" style="width: 100%; max-width: 500px; margin: 0 auto; padding: 0 15px;">
 		<h1 class="title">Venue</h1>
-		<h2 class="venue-name"> Sri Amma Maheshwari Garden Hall </h2>
-		<p class="venue-address"> Navali Road, Behind Canara Bank, Karatagi </p>
+		<h2 class="venue-name" style="font-size: 32px;"> Sri Amma Maheshwari Garden Hall </h2>
+		<p class="venue-address" style="font-size: 18px; font-family: 'Poppins', sans-serif;"> Navali Road, Behind Canara Bank, Karatagi </p>
 	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15332.257007542475!2d76.6021614!3d15.8277258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7e10014ef0cf5%3A0xe104593414589d31!2sKaratagi%2C%20Karnataka%20583229!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="300" style="border:0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" allowfullscreen="" loading="lazy"></iframe>
-		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Fmedium%2Findia-c0j.png&f=1&nofb=1&ipt=663b87ad1a1712504c74d64c555bac748b8c063d499566ecb6c9b5be7883826f" class="venue-art" alt="Venue Art">
 	</section>
 
 	<div class="ending-line">
@@ -248,13 +247,13 @@
 		<div class="om-symbol">—» ॐ «—</div>
 	</div>
 
-    <section style="text-align: center; padding: 40px 15px; background-color: rgba(255,255,255,0.6); border-radius: 20px; margin: 30px 10px 50px 10px; border: 2px solid #d4af37; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+    <section style="text-align: center; padding: 40px 15px; background-color: rgba(255,255,255,0.6); border-radius: 20px; margin: 30px 15px 50px; border: 2px solid #d4af37; box-shadow: 0 8px 25px rgba(0,0,0,0.1); width: 100%; max-width: 500px; margin-left: auto; margin-right: auto;">
         <h2 style="font-family: 'Playfair Display', serif; color: #705423; margin-bottom: 10px; font-size: 32px; font-weight: 900;">Contact Us</h2>
-        <p style="font-size: 18px; color: #333; margin-bottom: 25px; font-weight: bold;">For assistance:</p>
+        <p style="font-size: 16px; font-family: 'Poppins', sans-serif; color: #333; margin-bottom: 25px; font-weight: bold;">For assistance:</p>
         
-        <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
-            <a href="tel:+91953853585" style="text-decoration: none; color: white; background-color: #705423; padding: 18px; border-radius: 15px; width: 100%; max-width: 350px; font-weight: 900; font-size: 20px; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 15px rgba(112,84,35,0.4);">📞 Call Vakkaligera Family</a>
-            <a href="https://wa.me/91740491542" style="text-decoration: none; color: white; background-color: #25D366; padding: 18px; border-radius: 15px; width: 100%; max-width: 350px; font-weight: 900; font-size: 20px; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 15px rgba(37,211,102,0.4);">💬 WhatsApp Raghavendra</a>
+        <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+            <a href="tel:+91953853585" style="text-decoration: none; color: white; background-color: #705423; padding: 18px; border-radius: 15px; width: 100%; font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(112,84,35,0.4);">📞 Call Vakkaligera Family</a>
+            <a href="https://wa.me/91740491542" style="text-decoration: none; color: white; background-color: #25D366; padding: 18px; border-radius: 15px; width: 100%; font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37,211,102,0.4);">💬 WhatsApp Raghavendra</a>
         </div>
     </section>
     
@@ -277,4 +276,4 @@
 
 			(function frame() {
 				confetti({ particleCount: 4, angle: 60, spread: 55, origin: { x: 0, y: 0.6 }, colors: colors, scalar: 2 });
-				confetti({ particleCount: 4, 
+				confetti({ particleCount: 4, angle: 120, spread: 55, origin: { x: 1, y:		
